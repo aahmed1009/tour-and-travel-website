@@ -9,14 +9,15 @@
 }
 .btn {
   text-align: center;
-  padding: 13px;
-  width: 13vw;
+  padding: 1vw;
+  width: 10vw;
   border-radius: 5px;
   background-color: orange;
   color: #fff;
   border: none;
   font-weight: bold;
   cursor: pointer;
+  font-size: 1vw;
 }
 .btn-link {
   background-color: transparent;
@@ -93,17 +94,22 @@ header .button button:hover {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .intro-page {
   padding: 15px;
 }
-.title-page {
+.intor-page-content {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.intro-page .title-page {
   padding: 15px 0;
   width: 66%;
   font-size: 51px;
   margin-bottom: 35px;
 }
-.line {
+.intro-page .line {
   display: block;
   width: 10%;
   height: 2px;
@@ -111,55 +117,45 @@ header .button button:hover {
   background-color: black;
   margin-bottom: 20px;
 }
-input {
-  width: 100%;
-}
-.image-intro {
-  width: 400px;
-  height: 400px;
-}
-.image-intro img {
-  width: 100%;
-}
-.intor-page-content {
-  display: grid;
-  grid-template-columns: auto auto;
-}
 
-.intor-page-content input {
+.intro-page .intro-des .intor-page-content input {
   margin: 1vw;
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
+  width: 20vw;
+  width: 100%;
 }
-
+.intro-page .image-intro {
+  flex-shrink: 0;
+}
+.intro-page .image-intro img {
+  display: block;
+  width: 44vw;
+  text-align: center;
+  padding-left: 7vw;
+  border-radius: 10px;
+}
 /*********************************start section 2***********************************/
 .section2 {
   margin-top: 20vh;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 .section2 div {
   padding: 29px;
 }
-.section2 div p {
-  color: #7d7987;
-  width: fit-content;
-}
-.section2 div p::after {
-  content: "";
-  color: #7d7987;
-  width: fit-content;
-  height: 2px;
-  width: 100%;
-}
-.section2 div p:hover::after {
-  border: 1px solid black;
+.section2 .section2-image img {
+  flex-shrink: 0;
+  width: 30vw;
 }
 
+.section2 div p {
+  color: #7d7987;
+}
 .section2 div h1,
 p,
 button {
@@ -260,6 +256,9 @@ q {
   font-size: 18px;
   line-height: 10px;
   color: rgba(0, 0, 0, 0.85);
+}
+.section4-des {
+  width: 40vw;
 }
 /******************************start footer section*****************/
 footer {

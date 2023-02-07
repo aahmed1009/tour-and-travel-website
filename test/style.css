@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.parent {
+  display: flex;
+  background-color: black;
+  color: white;
+  flex-direction: row;
+}
+.child {
+  background-color: red;
+  color: azure;
+  padding: 15px;
+  margin: 10px;
+}
