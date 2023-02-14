@@ -9,15 +9,14 @@
 }
 .btn {
   text-align: center;
-  padding: 1vw;
-  width: 10vw;
+  padding: 13px;
+  width: 13vw;
   border-radius: 5px;
   background-color: orange;
   color: #fff;
   border: none;
   font-weight: bold;
   cursor: pointer;
-  font-size: 1vw;
 }
 .btn-link {
   background-color: transparent;
@@ -88,29 +87,23 @@ header .button button:hover {
   height: 39px;
   width: fit-content;
 }
-
 /*****************************start intor page************************************/
 .intro-page,
 .intor-page-content {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 .intro-page {
   padding: 15px;
 }
-.intor-page-content {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-.intro-page .title-page {
+.title-page {
   padding: 15px 0;
   width: 66%;
   font-size: 51px;
   margin-bottom: 35px;
 }
-.intro-page .line {
+.line {
   display: block;
   width: 10%;
   height: 2px;
@@ -118,94 +111,53 @@ header .button button:hover {
   background-color: black;
   margin-bottom: 20px;
 }
+input {
+  width: 100%;
+}
+.image-intro {
+  width: 400px;
+  height: 400px;
+}
+.image-intro img {
+  width: 100%;
+}
+.intor-page-content {
+  display: grid;
+  grid-template-columns: auto auto;
+}
 
-.intro-page .intro-des .intor-page-content input {
+.intor-page-content input {
   margin: 1vw;
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  width: 20vw;
-  width: 100%;
 }
-.intro-page .image-intro {
-  flex-shrink: 0;
-}
-.intro-page .image-intro img {
-  display: block;
-  width: 44vw;
-  text-align: center;
-  padding-left: 7vw;
-  border-radius: 10px;
-}
+
 /*********************************start section 2***********************************/
 .section2 {
   margin-top: 20vh;
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .section2 div {
   padding: 29px;
 }
-.section2-image img {
-  width: 30vw;
-  border-radius: 20px;
+.section2 div p {
+  color: #7d7987;
+  width: fit-content;
 }
-.section-des-two {
-  margin-left: 130px;
+.section2 div p::after {
+  content: "";
+  color: #7d7987;
+  width: fit-content;
+  height: 2px;
+  width: 100%;
 }
-.heading-des-two {
-  font-family: Playfair Display;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 50px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.para-des-two {
-  font-family: Mulish;
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.star {
-  display: inline-block;
-  width: 25.12px;
-  height: 23.95pxpx;
-  margin-left: 20px;
-  color: #ffbb0c;
-}
-.para-des-three {
-  display: block;
-  padding: 30px;
-  margin-right: 200px;
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  color: black;
-}
-.Edward {
-  font-family: Inter;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 48px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-bottom: 10px;
-}
-.founder {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 10px;
-  color: rgba(0, 0, 0, 0.85);
+.section2 div p:hover::after {
+  border: 1px solid black;
 }
 
 .section2 div h1,
@@ -214,20 +166,15 @@ button {
   padding: 20px 0;
 }
 /*******************************start section 3****************************************/
-/* .section3 {
-  padding: 100px 0;
-  margin: 50px 0;
-  margin-top: 20vh;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-around;
-  align-items: center;
-} */
+.section3 {
+  padding: 10px;
+  margin: 35px 0;
+}
 .section3 .header-section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 20vh;
+  margin: 15px 0;
 }
 
 .section3 .section-content div {
@@ -264,34 +211,9 @@ button {
   align-items: center;
   gap: 10px 15px;
   background-color: #ffffff;
-  padding: 50px 0;
-}
-.title-section {
-  font-family: Playfair Display;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 50px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-right: 500px;
-  padding-bottom: 20px;
-}
-.view-all {
-  font-family: Inter;
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 60px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #fb8f1d;
 }
 
 /*******************************start section 4****************************************/
-.section4 {
-  padding: 100px 0;
-
-  margin-top: 20vh;
-}
 .section4 .section-content img {
   width: 100%;
   min-height: 320px;
@@ -304,73 +226,51 @@ button {
   align-items: center;
   margin: 15px 0;
 }
-
-.section4-des {
-  width: 40vw;
+.star {
+  display: inline-block;
+  width: 25.12px;
+  height: 23.95pxpx;
+  margin-left: 20px;
+  color: #ffbb0c;
 }
-.img12 {
-  height: 406.5px;
-}
-.img13 {
-  height: 406.5px;
-}
-.img14 {
-  height: 406.5px;
-}
-.img15 {
-  height: 406.5px;
-}
-.heading-des-section4 {
-  border-radius: nullpx;
-  font-family: Inter;
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
+q {
+  display: block;
+  padding: 30px;
+  margin-right: 200px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
   color: #000000;
 }
-.para-des-section4 {
+.Edward {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.founder {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 26px;
-  /* or 173% */
-  color: #7d7987;
+  font-size: 18px;
+  line-height: 10px;
+  color: rgba(0, 0, 0, 0.85);
 }
-.btn-link-section4 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 28px;
-  /* identical to box height, or 187% */
-  background-color: transparent;
-  border: none;
-  color: #fb8f1d;
-}
-
 /******************************start footer section*****************/
 footer {
   display: grid;
   justify-content: space-around;
   grid-template-columns: repeat(4, auto);
   align-items: center;
-  margin-top: 20vh;
+  margin-top: 50px;
   padding: 20px;
   gap: 10px 20px;
-  background: #f9f9fb;
-}
-.list h2 {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 60px;
-  /* identical to box height, or 316% */
-
-  color: #000000;
+  background-color: #f9f9fb;
 }
 .footer-des {
   width: 28vw;
@@ -383,32 +283,5 @@ footer div ul {
 }
 footer div ul li {
   padding: 10px 0;
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 38px;
-  /* or 211% */
-
-  color: #848484;
-
   cursor: pointer;
-}
-.footer-paragrapah {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-
-  color: #848484;
-}
-.copyright {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 28px;
-  color: #848484;
 }
