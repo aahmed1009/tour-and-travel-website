@@ -412,3 +412,9 @@ footer div ul li {
   line-height: 28px;
   color: #848484;
 }
+.social {
+  display: block;
+}
+.social svg {
+  margin: 0 10px;
+}
